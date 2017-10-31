@@ -1,0 +1,18 @@
+<div id="streaming">Loading the player ...</div>
+<script type="text/javascript">
+jwplayer('streaming').setup({
+playlist:[{file:'https://cdn-livetv.metube.id/hls/idxchannel.m3u8',image:"https://cdn-static.metube.id/live/image/0IlFICPZMmzblN7CKYUH.png",
+title:'IDX Channel indonesia',mediaid:'5'}],
+width:"100%",aspectratio:"16:9",
+abouttext:'meTube.id',
+stretching:"uniform",
+aboutlink:'',
+autostart:false,
+androidhls:true,
+controls:true,
+displaydescription:true,
+displaytitle:true,
+repeat:true,
+stagevideo:false,
+visualplaylist:false,
+cast:{appid:"chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID"},skin:{"active":"#DF2148","inactive":"#CCCCCC","name":"glow"},plugins:{"https://www.metube.id/cc-content/themes/default/js/ping.js":{"pixel":"https://content.jwplatform.com/ping.gif"}}});jwplayer('myElement').on('error',function(){if(jwplayer('myElement').getPlaylistIndex()>=(jwplayer('myElement').getPlaylist().length-1)){$('#player-play');}});</script>
