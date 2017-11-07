@@ -1,5 +1,4 @@
 <script type="text/javascript" src="https://cdn.rawgit.com/umar83/jwplayer/f13c05d7/jwplayer-7.9.3/jwplayermetro.js"></script>
-<script>document.write('<script type="text/javascript" src="https://account.mncdigital.id/public/js/mncdig.min.js?t='+Date.now()+'"><\/script>');</script>
 <script>jwplayer.key="ypdL3Acgwp4Uh2/LDE9dYh3W/EPwDMuA2yid4ytssfI=";</script>
 <div id="myElement"></div>
 <script type="text/javascript">                    
@@ -17,4 +16,6 @@ displaydescription:true,
 displaytitle:true,
 repeat:true,
 stagevideo:false,
-visualplaylist:false,}); </script>
+visualplaylist:false,
+ cast:{appid:"chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID"},skin:{"active":"#DF2148","inactive":"#CCCCCC","name":"glow"},plugins:{"https://www.metube.id/cc-content/themes/default/js/ping.js":{"pixel":"https://content.jwplatform.com/ping.gif"}}});jwplayer('myElement').on('error',function(){if(jwplayer('myElement').getPlaylistIndex()>=(jwplayer('myElement').getPlaylist().length-1)){$('#player-play');}});</script>
+ 
