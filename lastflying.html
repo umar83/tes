@@ -6,18 +6,23 @@
 <script>jwplayer.key="ypdL3Acgwp4Uh2/LDE9dYh3W/EPwDMuA2yid4ytssfI=";</script>  
 </head>
 <body>
-<div id="streaming">Loading the player ...</div>
-<script type="text/javascript">
-jwplayer("streaming").setup({
-sources: [{file: "http://tvnet.xyz/wp-content/uploads/2017/09/globaltv-150x150.png"},{file: "https://cdn-livetv.metube.id/hls/globaltv.m3u8"}],rtmp: {bufferlength: 3},
-fallback: true,
-width: "100%",
-autostart: "false",
-androidhls: true,
-startparam: "start",
-aspectratio: "16:9",
-tracks:
-file: "/assets/captions-en.vtt",
-stretching: "exactfit"}); </script>
+  var playerInstance = jwplayer("myElement")
+playerInstance.setup({
+    playlist: [{
+        file: "https://cdn-livetv.metube.id/hls/globaltv.m3u8",
+        image: "/assets/sintel.jpg",
+        tracks: [{ 
+            file: "/assets/captions-en.vtt", 
+            label: "indonesia",
+            kind: "captions",
+            "default": true 
+        },{ 
+            file: "/assets/captions-fr.vtt", 
+            kind: "captions",
+            label: "French"
+        }]
+    }]
+});
+  
 </body>
 </html>
