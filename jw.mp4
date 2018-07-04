@@ -1,0 +1,19 @@
+<script type="text/javascript" src="https://cdn.rawgit.com/umar83/jwplayer/f13c05d7/jwplayer-7.9.3/jwplayermetro.js"></script>
+<script>jwplayer.key="ypdL3Acgwp4Uh2/LDE9dYh3W/EPwDMuA2yid4ytssfI=";</script>
+<div id="video"></div>
+<script type="text/javascript">                    
+jwplayer('video').setup({
+playlist:[{file:'https://drive.google.com/file/d/0B7SQWbanI2v2eUZPZDJuVG1vOFU/preview',image:"http://tvnet.xyz/wp-content/uploads/2017/09/mnc-sport.png",
+title:'MNC Sports',mediaid:'5'}],
+width:"100%",aspectratio:"16:9",
+abouttext:'tvnet.xyz',
+stretching:"uniform",
+aboutlink:'',
+autostart:false,
+androidhls:true,
+controls:true,
+displaydescription:true,
+displaytitle:true,
+repeat:true,
+stagevideo:false,
+visualplaylist:false,}); </script>
